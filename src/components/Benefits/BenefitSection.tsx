@@ -1,5 +1,4 @@
 'use client';
-import { Variants } from 'framer-motion';
 import Image from 'next/image';
 
 import { IBenefit } from '@/types';
@@ -8,24 +7,6 @@ interface Props {
     benefit: IBenefit;
     imageAtRight?: boolean;
 }
-
-const containerVariants: Variants = {
-    offscreen: {
-        opacity: 0,
-        y: 100,
-    },
-    onscreen: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            type: 'spring',
-            bounce: 0.2,
-            duration: 0.9,
-            delayChildren: 0.2,
-            staggerChildren: 0.1,
-        },
-    },
-};
 
 export const childVariants = {
     offscreen: {
@@ -43,8 +24,8 @@ export const childVariants = {
     },
 };
 
-const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
-    const { title, description, imageSrc, bullets } = benefit;
+const BenefitSection: React.FC<Props> = ({ benefit }: Props) => {
+    const { title, description, imageSrc } = benefit;
 
     return (
         <div className="relative w-full p-4">
