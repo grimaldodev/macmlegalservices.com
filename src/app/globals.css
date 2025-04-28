@@ -13,6 +13,15 @@
   --hero-background: #000000;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   @apply scroll-smooth;
 }
@@ -46,4 +55,32 @@ h1, h2, h3, h4, h5, h6 {
 
 .benefit-section:last-of-type > div {
   @apply mb-10;
+}
+
+.goldGradient {
+background: radial-gradient(ellipse at top, rgba(255, 155, 0, 0.3) 0%, rgba(0, 0, 0, 0) 80%);}
+
+/*Footer*/
+
+.borderTop::before,
+.borderBottom::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  /* Grosor del borde */
+  background: linear-gradient(to right, #000000, #C29F49, #000000);
+  /* Degradado */
+}
+
+.borderBottom::after{
+  bottom: 0;
+}
+
+.bg-footer{
+  background-image: url('/images/footer-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1200px;
 }

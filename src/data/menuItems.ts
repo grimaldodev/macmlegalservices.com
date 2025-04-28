@@ -1,16 +1,20 @@
-import { IMenuItem } from "@/types";
+import { IMenuItem } from '@/types';
 
 export const menuItems: IMenuItem[] = [
     {
-        text: "Features",
-        url: "#features"
+        text: 'Fideicomisos',
+        url: 'fideicomisos',
     },
     {
-        text: "Pricing",
-        url: "#pricing"
+        text: 'Servicios Legales',
+        url: 'servicios-legales',
     },
     {
-        text: "Testimonials",
-        url: "#testimonials"
-    }
+        text: 'Asesoría Empresarial',
+        url: 'asesoria-empresarial',
+    },
+    {
+        text: 'Contacto',
+        url: 'contacto',
+    },
 ];

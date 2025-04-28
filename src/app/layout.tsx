@@ -1,12 +1,10 @@
 import type { Metadata } from 'next';
-import { Manrope, Source_Sans_3 } from 'next/font/google';
 
 import { siteDetails } from '@/data/siteDetails';
 
+import Footer from '@/components/Footer';
+import MobileMenu from '@/components/MobileMenu';
 import './globals.css';
-
-const manrope = Manrope({ subsets: ['latin'] });
-const sourceSans = Source_Sans_3({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: siteDetails.metadata.title,
@@ -40,8 +38,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${manrope.className} ${sourceSans.className} antialiased`}>
-                <main>{children}</main>
+            <body className={`antialiased`}>
+                <div className="w-screen md:w-[90vw] md:mx-auto">
+                    <MobileMenu />
+                    <main>{children}</main>
+                    <Footer />
+                </div>
             </body>
         </html>
     );

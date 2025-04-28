@@ -1,37 +1,41 @@
-import { IMenuItem, ISocials } from "@/types";
+import { IMenuItem, ISocials } from '@/types';
 
 export const footerDetails: {
     subheading: string;
     quickLinks: IMenuItem[];
-    email: string;
+    email?: string;
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
+    subheading: 'Empowering businesses with cutting-edge financial technology solutions.',
     quickLinks: [
         {
-            text: "Features",
-            url: "#features"
+            text: 'Fideicomisos',
+            url: 'fideicomisos',
         },
         {
-            text: "Pricing",
-            url: "#pricing"
+            text: 'Servicios Legales',
+            url: 'servicios-legales',
         },
         {
-            text: "Testimonials",
-            url: "#testimonials"
-        }
+            text: 'Asesoría Empresarial',
+            url: 'asesoria-empresarial',
+        },
+        {
+            text: 'Contacto',
+            url: 'contacto',
+        },
     ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
+    telephone: '+52 322 240 9635',
     socials: {
+        facebook: 'https://www.facebook.com/profile.php?id=61573573651730',
+        instagram: 'https://www.instagram.com/macmlegalservices',
+        tiktok: 'https://www.tiktok.com/@macmlegalservices?_t=ZM-8uH2td1UHiQ&_r=1',
         // github: 'https://github.com',
         // x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
-        facebook: 'https://facebook.com',
+        //twitter: 'https://twitter.com/Twitter',
         // youtube: 'https://youtube.com',
-        linkedin: 'https://www.linkedin.com',
+        //linkedin: 'https://www.linkedin.com',
         // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
-    }
-}
+    },
+};
