@@ -8,7 +8,7 @@ import { getPlatformIconByName } from '@/utils';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="relative bg-footer borderTop text-primary pb-10 mt-10">
+        <footer id="footer" className="relative bg-footer borderTop text-primary pb-10 mt-10">
             <div className="w-full flex flex-row flex-wrap pt-5">
                 <div className="w-1/3 p-4 md:w-1/3">
                     <Link href="/" className="relative block w-full h-full gap-2">

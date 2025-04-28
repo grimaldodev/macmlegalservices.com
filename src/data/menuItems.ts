@@ -15,6 +15,6 @@ export const menuItems: IMenuItem[] = [
     },
     {
         text: 'Contacto',
-        url: 'contacto',
+        url: '#footer',
     },
 ];

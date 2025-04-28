@@ -23,7 +23,7 @@ export const footerDetails: {
         },
         {
             text: 'Contacto',
-            url: 'contacto',
+            url: '#footer',
         },
     ],
     telephone: '+52 322 240 9635',
