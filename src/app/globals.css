@@ -91,3 +91,10 @@ background: radial-gradient(ellipse at top, rgba(255, 155, 0, 0.3) 0%, rgba(0, 0
   background-position: top center;
   background-size: cover;
 }
+
+.trusts-hero {
+  background-image: url('/images/hero-trusts.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
